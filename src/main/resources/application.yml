@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:mysql://localhost:3306/hotel_reservation
+    username: springstudent
+    password: springstudent
+  jpa:
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  application:
+    name: validator-service
